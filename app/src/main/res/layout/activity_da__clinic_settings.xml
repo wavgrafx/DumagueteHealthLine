@@ -1,0 +1,824 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_gradient_theme"
+        android:layout_height="match_parent"
+        tools:context=".DA_ClinicSettings">
+    <LinearLayout
+            android:paddingBottom="40dp"
+            android:layout_width="match_parent"
+            android:background="@drawable/bg_gradient_theme"
+            android:layout_height="wrap_content">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/theme_basket_light"
+                android:layout_marginLeft="5dp"
+                android:layout_height="wrap_content">
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="bottom"
+                    android:background="@drawable/cover"
+                    android:layout_height="180dp">
+                <TextView
+                        android:text="@string/medical_practice"
+                        android:textSize="16sp"
+                        android:id="@+id/medPractice"
+                        android:padding="5dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorDHL"
+                        android:background="@drawable/bg_button_rightattached"
+                        android:layout_marginBottom="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_height="wrap_content"/>
+
+                <ImageView
+                        android:layout_width="match_parent"
+                        android:src="@drawable/doctors_avatars"
+                        android:id="@+id/profileAvatar"
+                        android:layout_marginBottom="5dp"
+                        android:layout_height="80dp"/>
+
+                <TextView
+                        android:text="@string/name"
+                        android:textSize="20sp"
+                        android:layout_margin="2dp"
+                        android:id="@+id/fullName"
+                        android:padding="5dp"
+                        android:textStyle="bold"
+                        android:background="#20000000"
+                        android:textAlignment="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+
+
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_margin="5dp"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:focusedByDefault="false"
+                    android:textAlignment="center"
+                    android:id="@+id/update_contactNum"
+                    android:inputType="phone"
+                    android:hint="@string/telephone_number"
+                    android:layout_height="wrap_content"/>
+
+
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_margin="5dp"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:textAlignment="center"
+                    android:focusedByDefault="false"
+                    android:id="@+id/update_cert"
+                    android:inputType="textMultiLine"
+                    android:hint="@string/certificates"
+                    android:layout_height="wrap_content"/>
+
+
+
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_margin="5dp"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:focusedByDefault="false"
+                    android:inputType="textMultiLine"
+                    android:textAlignment="center"
+                    android:id="@+id/update_address"
+                    android:hint="@string/address"
+                    android:layout_height="wrap_content"/>
+
+
+
+            <TextView
+                    android:text="@string/availability"
+                    android:textSize="15sp"
+                    android:layout_marginTop="20dp"
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            <TextView
+                    android:text="(Tap to set day and time availability)"
+                    android:textSize="15sp"
+                    android:textStyle="italic"
+                    android:layout_marginBottom="10dp"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="30dp"
+                    android:layout_height="wrap_content">
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+
+                    <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="#70ffffff"/>
+
+                    <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:weightSum="3"
+                            android:gravity="center"
+                            android:layout_marginBottom="10dp"
+                            android:layout_height="wrap_content">
+
+                        <TextView
+                                android:text="DAYS"
+                                android:background="@drawable/bg_centered_textview"
+                                android:gravity="center"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"/>
+
+                        <TextView
+                                android:text="OPEN"
+                                android:background="@drawable/bg_centered_textview"
+                                android:gravity="center"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"/>
+
+                        <TextView
+                                android:text="CLOSE"
+                                android:background="@drawable/bg_centered_textview"
+                                android:gravity="center"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"/>
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:weightSum="3"
+                            android:gravity="center"
+                            android:layout_marginBottom="10dp"
+                            android:layout_height="wrap_content">
+
+                        <CheckBox
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:text="@string/monday"
+                                android:textAlignment="center"
+                                android:background="@drawable/minibox_borderless"
+                                android:id="@+id/update_Mon"
+                                android:checked="true"
+                                android:layout_height="40dp"/>
+
+                        <TextView
+                                android:id="@+id/monopentime"
+                                android:text="08:00"
+                                android:background="@drawable/minibox_borderless"
+                                android:layout_width="0dp"
+                                android:gravity="center"
+                                android:layout_weight="1"
+                                android:layout_height="40dp"/>
+
+                        <TextView
+                                android:text="17:00"
+                                android:background="@drawable/minibox_borderless"
+                                android:id="@+id/monclosetime"
+                                android:layout_width="0dp"
+                                android:gravity="center"
+                                android:layout_weight="1"
+                                android:layout_height="40dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:weightSum="3"
+                            android:gravity="center"
+                            android:layout_marginBottom="10dp"
+                            android:layout_height="wrap_content">
+
+                        <CheckBox
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:text="@string/tuesday"
+                                android:textAlignment="center"
+                                android:background="@drawable/minibox_borderless"
+                                android:id="@+id/update_Tue"
+                                android:checked="true"
+                                android:layout_height="40dp"/>
+
+                        <TextView
+                                android:id="@+id/tueopentime"
+                                android:text="08:00"
+                                android:background="@drawable/minibox_borderless"
+                                android:gravity="center"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="40dp"/>
+
+                        <TextView
+                                android:text="17:00"
+                                android:background="@drawable/minibox_borderless"
+                                android:gravity="center"
+                                android:id="@+id/tueclosetime"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="40dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:weightSum="3"
+                            android:gravity="center"
+                            android:layout_marginBottom="10dp"
+                            android:layout_height="wrap_content">
+
+                        <CheckBox
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:text="@string/wednesday"
+                                android:textAlignment="center"
+                                android:background="@drawable/minibox_borderless"
+                                android:id="@+id/update_Wed"
+                                android:checked="true"
+                                android:layout_height="40dp"/>
+
+                        <TextView
+                                android:id="@+id/wedopentime"
+                                android:text="08:00"
+                                android:background="@drawable/minibox_borderless"
+                                android:gravity="center"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="40dp"/>
+
+                        <TextView
+                                android:text="17:00"
+                                android:background="@drawable/minibox_borderless"
+                                android:gravity="center"
+                                android:id="@+id/wedclosetime"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="40dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:weightSum="3"
+                            android:gravity="center"
+                            android:layout_marginBottom="10dp"
+                            android:layout_height="wrap_content">
+
+                        <CheckBox
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:text="@string/thursday"
+                                android:textAlignment="center"
+                                android:background="@drawable/minibox_borderless"
+                                android:id="@+id/update_Thu"
+                                android:checked="true"
+                                android:layout_height="40dp"/>
+
+                        <TextView
+                                android:id="@+id/thuopentime"
+                                android:text="08:00"
+                                android:background="@drawable/minibox_borderless"
+                                android:gravity="center"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="40dp"/>
+
+                        <TextView
+                                android:text="17:00"
+                                android:background="@drawable/minibox_borderless"
+                                android:gravity="center"
+                                android:id="@+id/thuclosetime"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="40dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:weightSum="3"
+                            android:gravity="center"
+                            android:layout_marginBottom="10dp"
+                            android:layout_height="wrap_content">
+
+                        <CheckBox
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:text="@string/friday"
+                                android:textAlignment="center"
+                                android:background="@drawable/minibox_borderless"
+                                android:id="@+id/update_Fri"
+                                android:checked="true"
+                                android:layout_height="40dp"/>
+
+                        <TextView
+                                android:id="@+id/friopentime"
+                                android:text="08:00"
+                                android:background="@drawable/minibox_borderless"
+                                android:gravity="center"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="40dp"/>
+
+                        <TextView
+                                android:text="17:00"
+                                android:background="@drawable/minibox_borderless"
+                                android:gravity="center"
+                                android:id="@+id/friclosetime"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="40dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:weightSum="3"
+                            android:gravity="center"
+                            android:layout_marginBottom="10dp"
+                            android:layout_height="wrap_content">
+
+                        <CheckBox
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:text="@string/saturday"
+                                android:textAlignment="center"
+                                android:background="@drawable/minibox_borderless"
+                                android:id="@+id/update_Sat"
+                                android:checked="false"
+                                android:layout_height="40dp"/>
+
+                        <TextView
+                                android:id="@+id/satopentime"
+                                android:text="08:00"
+                                android:background="@drawable/minibox_borderless"
+                                android:gravity="center"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:visibility="invisible"
+                                android:layout_height="40dp"/>
+
+                        <TextView
+                                android:text="17:00"
+                                android:background="@drawable/minibox_borderless"
+                                android:gravity="center"
+                                android:id="@+id/satclosetime"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:visibility="invisible"
+                                android:layout_height="40dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:weightSum="3"
+                            android:gravity="center"
+                            android:layout_marginBottom="10dp"
+                            android:layout_height="wrap_content">
+
+                        <CheckBox
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:text="@string/sunday"
+                                android:textAlignment="center"
+                                android:background="@drawable/minibox_borderless"
+                                android:id="@+id/update_Sun"
+                                android:layout_height="40dp"/>
+
+                        <TextView
+                                android:id="@+id/sunopentime"
+                                android:text="08:00"
+                                android:background="@drawable/minibox_borderless"
+                                android:gravity="center"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:visibility="invisible"
+                                android:layout_height="40dp"/>
+
+                        <TextView
+                                android:text="17:00"
+                                android:background="@drawable/minibox_borderless"
+                                android:gravity="center"
+                                android:id="@+id/sunclosetime"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:visibility="invisible"
+                                android:layout_height="40dp"/>
+                    </LinearLayout>
+
+
+                    <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginBottom="30dp"
+                            android:background="#70ffffff"/>
+
+                    <TextView
+                            android:text="Set clinic breaks if applicable"
+                            android:textSize="15sp"
+                            android:textStyle="italic"
+                            android:layout_marginBottom="10dp"
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="#70ffffff"/>
+
+                    <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:weightSum="3"
+                            android:gravity="center"
+                            android:layout_marginBottom="10dp"
+                            android:layout_height="wrap_content">
+
+                        <TextView
+                                android:gravity="center"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"/>
+
+                        <TextView
+                                android:text="START"
+                                android:background="@drawable/bg_centered_textview"
+                                android:gravity="center"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"/>
+
+                        <TextView
+                                android:text="END"
+                                android:background="@drawable/bg_centered_textview"
+                                android:gravity="center"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:weightSum="3"
+                            android:gravity="center"
+                            android:layout_marginBottom="10dp"
+                            android:layout_height="wrap_content">
+
+                        <CheckBox
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:text="1st Break"
+                                android:textAlignment="center"
+                                android:background="@drawable/minibox_borderless"
+                                android:id="@+id/addClinic_brk1"
+                                android:layout_height="40dp"/>
+
+                        <TextView
+                                android:id="@+id/brkstart1"
+                                android:text="12:00"
+                                android:background="@drawable/minibox_borderless"
+                                android:gravity="center"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:visibility="invisible"
+                                android:layout_height="40dp"/>
+
+                        <TextView
+                                android:text="13:00"
+                                android:background="@drawable/minibox_borderless"
+                                android:gravity="center"
+                                android:id="@+id/brkend1"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:visibility="invisible"
+                                android:layout_height="40dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:weightSum="3"
+                            android:gravity="center"
+                            android:layout_marginBottom="10dp"
+                            android:layout_height="wrap_content">
+
+                        <CheckBox
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:text="2nd Break"
+                                android:textAlignment="center"
+                                android:background="@drawable/minibox_borderless"
+                                android:id="@+id/addClinic_brk2"
+                                android:layout_height="40dp"/>
+
+                        <TextView
+                                android:id="@+id/brkstart2"
+                                android:text="19:00"
+                                android:background="@drawable/minibox_borderless"
+                                android:gravity="center"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:visibility="invisible"
+                                android:layout_height="40dp"/>
+
+                        <TextView
+                                android:text="20:00"
+                                android:background="@drawable/minibox_borderless"
+                                android:gravity="center"
+                                android:id="@+id/brkend2"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:visibility="invisible"
+                                android:layout_height="40dp"/>
+                    </LinearLayout>
+
+
+
+                    <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#70ffffff"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                    android:text="Maximum number of Patients per hour"
+                    android:textSize="15sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:padding="5dp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="40dp"
+                    android:layout_height="wrap_content">
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:paddingBottom="20dp"
+                            android:layout_height="wrap_content">
+
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:gravity="center"
+                                android:layout_height="wrap_content">
+                            <ImageView
+                                    android:layout_width="30dp"
+                                    android:src="@drawable/negative_icon"
+                                    android:layout_margin="5dp"
+                                    android:elevation="3dp"
+                                    android:id="@+id/patient_minus"
+                                    android:layout_height="35dp"/>
+
+
+                            <TextView
+                                    android:text="1"
+                                    android:id="@+id/maximum_patients"
+                                    android:textSize="20dp"
+                                    android:gravity="center"
+                                    android:layout_marginLeft="30dp"
+                                    android:layout_marginRight="30dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"/>
+
+                            <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_margin="5dp"
+                                    android:elevation="3dp"
+                                    android:src="@drawable/positive_icon"
+                                    android:id="@+id/patient_plus"
+                                    android:layout_height="35dp"/>
+
+
+                        </LinearLayout>
+
+                        <TextView
+                                android:text="Patient"
+                                android:id="@+id/textview_patienttitle"
+                                android:textSize="15dp"
+                                android:gravity="center"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:gravity="center"
+                            android:layout_height="match_parent">
+
+
+                        <SeekBar
+                                android:layout_width="match_parent"
+                                android:id="@+id/seekbar_patients"
+                                android:min="1"
+                                android:max="100"
+                                android:secondaryProgress="50"
+                                android:layout_height="wrap_content"/>
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                    android:text="Booking Days"
+                    android:textSize="15sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:padding="5dp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="40dp"
+                    android:layout_height="wrap_content">
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:paddingBottom="20dp"
+                            android:layout_height="wrap_content">
+
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:gravity="center"
+                                android:layout_height="wrap_content">
+                            <ImageView
+                                    android:layout_width="30dp"
+                                    android:src="@drawable/negative_icon"
+                                    android:layout_margin="5dp"
+                                    android:elevation="3dp"
+                                    android:id="@+id/days_minus"
+                                    android:layout_height="35dp"/>
+
+
+                            <TextView
+                                    android:text="7"
+                                    android:id="@+id/book_days"
+                                    android:textSize="20dp"
+                                    android:gravity="center"
+                                    android:layout_marginLeft="30dp"
+                                    android:layout_marginRight="30dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"/>
+
+                            <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_margin="5dp"
+                                    android:elevation="3dp"
+                                    android:src="@drawable/positive_icon"
+                                    android:id="@+id/days_plus"
+                                    android:layout_height="35dp"/>
+
+
+                        </LinearLayout>
+
+                        <TextView
+                                android:text="Days ahead"
+                                android:id="@+id/textview_bookdaystitle"
+                                android:textSize="15dp"
+                                android:gravity="center"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:gravity="center"
+                            android:layout_height="match_parent">
+
+
+                        <SeekBar
+                                android:layout_width="match_parent"
+                                android:id="@+id/seekbar_bookdays"
+                                android:min="7"
+                                android:max="365"
+                                android:secondaryProgress="50"
+                                android:layout_height="wrap_content"/>
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            
+
+            
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="40dp"
+                    android:layout_height="wrap_content">
+                <LinearLayout
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:gravity="left"
+                        android:paddingRight="20dp"
+                        android:layout_height="match_parent">
+                    <Button
+                            android:layout_width="match_parent"
+                            android:layout_marginBottom="20dp"
+                            android:text="Update"
+                            android:id="@+id/update_Clinic"
+                            android:background="@drawable/bg_button_leftattached"
+                            android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:gravity="right"
+                        android:paddingLeft="20dp"
+                        android:layout_height="match_parent">
+                    <Button
+                            android:layout_width="match_parent"
+                            android:layout_marginBottom="20dp"
+                            android:text="Delete"
+                            android:id="@+id/delete_Clinic"
+                            android:background="@drawable/bg_button_rightattached"
+                            android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <ProgressBar
+                    style="?android:attr/progressBarStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:visibility="invisible"
+                    android:id="@+id/progressbar"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</ScrollView>

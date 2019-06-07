@@ -1,0 +1,188 @@
+<resources>
+
+
+    <string name="start">ACCEPT AND CONTINUE</string>
+    <string name="sms_code">Send SMS Code</string>
+    <string name="confirmation_code">6-DIGIT CODE</string>
+    <string name="confirm">Confirm</string>
+    <string name="app_name">Dumaguete Health Line</string>
+    <string name="title_activity_maps">Google Search Location</string>
+    <string name="messenger">Messenger</string>
+    <string name="fitness_tips">Fitness Tips</string>
+    <string name="map">Hospitals</string>
+    <string name="bmi_calculator">BMI Calculator</string>
+    <string name="appointments">Appointments</string>
+    <string name="set_an_appointment">Set an Appointment</string>
+    <string name="welcome">Hey! there. What\'s up?</string>
+    <string name="welcome_to">Welcome to</string>
+    <string name="enter_the_6_digit_pin_code_sent_by_sms">Enter the 6-digit PIN Code sent by SMS</string>
+    <string name="enter_your_mobile_number_below_to_login_or_signup">Select country then enter phone number to login or
+        signup
+    </string>
+
+
+    <string name="get_started">GET STARTED</string>
+
+
+    <string name="send_sms_code">SEND SMS CODE</string>
+    <string name="code">6-DIGIT CODE</string>
+    <string name="dumaguete_doc_assistant">Dumaguete Doc Assistant</string>
+    <string name="hospitals_and_clinics">Hospitals</string>
+    <string name="add_clinic">Add Clinic</string>
+    <string name="patient_schedule">Manage Clinic</string>
+    <string name="name">Name</string>
+    <string name="first_name">First Name</string>
+    <string name="middle_name">Middle Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="gender">Sex</string>
+    <string name="doctorate_degree">Doctorate Degree</string>
+    <string name="medical_practice">Medical Practice</string>
+    <string name="certificates">Certificates</string>
+    <string name="clinic_full_address">Clinic Full Address</string>
+    <string name="address">Address</string>
+    <string name="availability">Availability</string>
+    <string name="monday">MON</string>
+    <string name="tuesday">TUE</string>
+    <string name="wednesday">WED</string>
+    <string name="thursday">THU</string>
+    <string name="friday">FRI</string>
+    <string name="saturday">SAT</string>
+    <string name="sunday">SUN</string>
+    <string name="clinic_opening_time">OPEN</string>
+    <string name="clinic_closing_time">CLOSE</string>
+    <string name="save_clinic">SAVE CLINIC</string>
+    <string name="_09_00_am">09:00 AM</string>
+    <string name="_05_00_pm">05:00 PM</string>
+    <string name="_000_0000000">(000)0000000</string>
+    <string name="telephone_number">Telephone Number</string>
+    <string-array name="doctoralDegree">
+        <item>M.D.</item>
+        <item>D.O.</item>
+    </string-array>
+
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string-array name="medicalPractice">
+        <item>General Practitioner</item>
+        <item>Physician</item>
+        <item>Ophthalmologist</item>
+        <item>Dermatologist</item>
+        <item>Family Medicine</item>
+        <item>Pediatrician</item>
+        <item>Urologist</item>
+        <item>Psychiatrist</item>
+        <item>Obstetrician-Gynecologist</item>
+        <item>Endocrinologist</item>
+        <item>Cardiologist</item>
+        <item>Internal Medicine</item>
+        <item>Dentist</item>
+        <item>Physio</item>
+        <item>Chiro</item>
+        <item>Psychologist</item>
+        <item>Audiologist</item>
+        <item>Podiatrist</item>
+        <item>Surgeon</item>
+        <item>Physical Medicine and Rehabilitation</item>
+        <item>Radiation Oncologist</item>
+    </string-array>
+
+
+    <string name="_0000000000">0000000000</string>
+    <string name="fitnesstips01">01</string>
+    <string name="fitnesstips02">02</string>
+    <string name="fitnesstips03">03</string>
+    <string name="fitnesstips00">00</string>
+    <string name="fitnesstips04">04</string>
+    <string name="fitnesstips05">05</string>
+    <string name="fitnesstips06">06</string>
+    <string name="fitnesstips07">07</string>
+    <string name="fitnesstips08">08</string>
+    <string name="fitnesstips09">09</string>
+    <string name="fitnesstips10">10</string>
+    <string name="desc01">People tend to complicate things for themselves when they are told to “eat right” or “eat
+        healthily.” Doing so doesn’t mean that you start adopting a bland diet. You don’t need to starve yourself to
+        follow a healthy diet. You just need to remember that ‘fad’ diets won’t end up being your friend in the long
+        run. That’s why it’s essential that you pick up a nutritional plan that provides your body with the energy it
+        needs as well as help you stay on a healthy track. One such healthy diet plan you can go for happens to be the
+        ketogenic diet. To summarize, the nutrient intake should be around 70% fat, 25% proteins, and 5%
+        carbohydrates. It’s all about eating meat, leafy greens, above ground vegetables, high-fat dairy, nuts, berries,
+        and edible oil such as coconut oil – yes, there are many delicious foods from every country, some more healthy
+        than others. You’ll need to stay away from things such as wheat and potatoes.
+    </string>
+    <string name="desc_02">It is suggested that an individual should get at least 150 minutes of moderate activity per
+        week. This would lead to continual blood flow throughout your body, thus, resulting you to stay healthy as well
+        as deal with any mental stress you might be experiencing. Try and join a gym in 2019. If you can’t do that, the
+        excellent alternative is to exercise at home by following online weight loss workouts from reliable
+        professionals. You can also clean more around the house to stay active. Other than that, do small things to stay
+        active such as taking the stairs instead of the elevator or even jogging on the spot while watching TV.
+    </string>
+    <string name="desc_03">Getting a good night’s sleep should be one of the primary goals that individuals focus on
+        when making a move towards adopting a healthy lifestyle. How much sleep do you need? Being able to get up to 7
+        to 8 hours of sleep, maybe up to 9 hours in some instances leaves an individual feeling fresh and energized when
+        he or she wakes up. This leads to a more focused daily routine, less tiredness and more vitality. A lack of
+        sleep leads to a lot of problems including health issues and the development of psychological problems like
+        insomnia.
+    </string>
+    <string name="desc_04">This is one of the most important steps a person should take toward maintaining a healthy
+        lifestyle. Being smoke-free leads to your body becoming toxin free and saving you from harmful diseases like
+        cancer.
+    </string>
+    <string name="desc_05">This can be achieved by going to follow-ups or regular checkups to your doctor. Doing so
+        provides you with updates on your health and help to indicate if any health problems are on the verge of
+        developing. Prevention is always better than the required cure, and that is why with health screenings you can
+        be pro-active about your health.
+    </string>
+    <string name="desc_06">Forming bonds and a good social circle can help a person healthily share their emotions and
+        thoughts. Having a support system is great for your mental and physical well-being especially during times of
+        stress. Tell yourself that you’ll hang out with friends more in 2019. You can even start now if you want.
+    </string>
+    <string name="desc_07">We all know about the importance of water, but we don’t prioritize its consumption. A lot of
+        times we go through the day without drinking a single glass of water, opting for tea or coffee instead. Your
+        body needs water to stay healthy. Ensure that in 2019 you start drinking the recommended amount of water, at
+        least 2 liters if not more.
+    </string>
+    <string name="desc_08">Start 2019 by appreciating what you have in life. Take time to smell the roses and be aware
+        of what you’ve achieved in your life. Be grateful for your life experiences, and you’ll find yourself in a more
+        psychologically healthier space.
+    </string>
+    <string name="desc_09">If you don’t have seems to have a hobby already, you should try and pick up one. Also, don’t
+        hesitate to try new things. You can go to a cooking class, a wood workshop, or even decide to do some gardening.
+        The important thing is that you spend some free time doing something that makes you feel good about yourself.
+    </string>
+    <string name="desc_10">One of the best health-centric things you can do is being more in touch with your inner self.
+        Welcome the meditation in your life. You can join a yoga class, or you can even take out a few minutes from your
+        schedule to just sit down and relax. Concentrate on your breathing and listen to what your body is really
+        experiencing. As mentioned above, being healthy doesn’t mean you have to stress yourself out. By following some
+        easy tips, you can start your journey toward a better and healthier self. All of the tips above can be easily
+        incorporated into a person’s daily life. However, the point to note here is that one shouldn’t expect results to
+        show as soon as a person adopts either one or several of the tips mentioned above. Be patient and understand
+        that all good things come in time.
+    </string>
+    <string name="dumaguete_health_line">Dumaguete Health Line</string>
+    <string name="clinic_arrive_notice">(Be in the clinic at least 15
+        minutes before the time of appointment)
+    </string>
+    <string name="privacy_policy_message">Thank you for installing Dumaguete Health Line! For protecting your rights
+        please read and confirm
+        our Privacy Policy. Our Privacy Policy describes what information we collect from you. Tap on Notice below to
+        read our Privacy Policy.
+    </string>
+    <string name="privacy_policy_confirm">By tapping Accept and Continue you have read and accepted our Privacy
+        Policy.
+    </string>
+
+    <string-array name="blood_types">
+        <item>A +</item>
+        <item>O +</item>
+        <item>B +</item>
+        <item>A B+</item>
+        <item>A -</item>
+        <item>O -</item>
+        <item>B -</item>
+        <item>AB -</item>
+    </string-array>
+
+</resources>

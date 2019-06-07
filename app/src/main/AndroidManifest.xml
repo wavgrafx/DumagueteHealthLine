@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="lab.wavgrafx.com.dumaguetehealthline">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+    <application
+            android:allowBackup="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme">
+        <activity android:name=".DA_SelectClinic">
+        </activity>
+        <activity android:name=".DA_ViewAppointment">
+        </activity>
+        <activity android:name=".DA_Appointments">
+        </activity>
+        <activity
+                android:name=".DA_ViewQueue"
+                android:screenOrientation="portrait">
+        </activity>
+        <activity
+                android:name=".DA_Messenger"
+                android:screenOrientation="portrait"
+                android:windowSoftInputMode="stateHidden">
+        </activity>
+        <activity
+                android:name=".DA_ManageClinic"
+                android:screenOrientation="portrait">
+        </activity>
+        <activity
+                android:name=".DA_Inbox"
+                android:screenOrientation="portrait">
+        </activity>
+        <activity
+                android:name=".DA_Contacts"
+                android:screenOrientation="portrait">
+        </activity>
+        <activity
+                android:name=".DA_ClinicSettings"
+                android:screenOrientation="portrait"
+                android:windowSoftInputMode="stateHidden">
+        </activity>
+        <activity
+                android:name=".DA_ClinicQueue"
+                android:screenOrientation="portrait">
+        </activity>
+        <activity
+                android:name=".DA_AddClinic"
+                android:screenOrientation="portrait"
+                android:windowSoftInputMode="stateHidden">
+        </activity>
+        <activity
+                android:name=".DA_Dashboard"
+                android:screenOrientation="portrait">
+        </activity>
+        <activity
+                android:name=".UserMode"
+                android:screenOrientation="portrait">
+        </activity>
+        <activity
+                android:name=".Locator"
+                android:screenOrientation="portrait">
+        </activity>
+        <activity
+                android:name=".BloodRequestHub"
+                android:screenOrientation="portrait"
+                android:windowSoftInputMode="stateHidden">
+        </activity>
+        <activity
+                android:name=".Fitness"
+                android:screenOrientation="portrait">
+        </activity>
+        <activity
+                android:name=".Messenger"
+                android:screenOrientation="portrait"
+                android:windowSoftInputMode="stateHidden">
+        </activity>
+        <activity
+                android:name=".Contacts"
+                android:screenOrientation="portrait">
+        </activity>
+        <activity
+                android:name=".ViewQueue"
+                android:screenOrientation="portrait">
+        </activity>
+        <activity
+                android:name=".Appointments"
+                android:screenOrientation="portrait">
+        </activity>
+        <activity
+                android:name=".GetAppointment"
+                android:screenOrientation="portrait"
+                android:windowSoftInputMode="stateHidden">
+        </activity>
+        <activity
+                android:name=".ViewClinic"
+                android:screenOrientation="portrait">
+        </activity>
+        <activity
+                android:name=".BMICalculator"
+                android:screenOrientation="portrait">
+        </activity>
+        <activity
+                android:name=".SearchClinic"
+                android:screenOrientation="portrait"
+                android:windowSoftInputMode="stateHidden">
+        </activity>
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+                android:name="com.google.android.geo.API_KEY"
+                android:value="@string/google_maps_key"/>
+
+        <activity
+                android:name=".MapsActivity"
+                android:label="@string/title_activity_maps">
+        </activity>
+        <activity
+                android:name=".Dashboard"
+                android:screenOrientation="portrait">
+        </activity>
+        <activity
+                android:name=".Login"
+                android:screenOrientation="portrait">
+        </activity>
+        <activity
+                android:name=".MainActivity"
+                android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

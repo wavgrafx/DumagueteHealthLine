@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/bg_gradient_theme"
+        tools:context=".Dashboard">
+
+    <LinearLayout
+            android:weightSum="2"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_height="0dp">
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="right"
+                    android:layout_height="wrap_content">
+                <ImageView
+                        android:layout_width="40dp"
+                        android:layout_gravity="center"
+                        android:id="@+id/btnGiveBlood"
+                        android:tooltipText="Blood Request Hub"
+                        android:src="@drawable/blood"
+                        android:background="@drawable/menu_1_theme"
+                        android:elevation="2dp"
+                        android:padding="10dp"
+                        android:layout_margin="7dp"
+                        android:layout_height="40dp"/>
+
+                <ImageView
+                        android:layout_width="40dp"
+                        android:tooltipText="Sign out"
+                        android:layout_gravity="center"
+                        android:id="@+id/btnLogout"
+                        android:src="@drawable/logout"
+                        android:background="@drawable/menu_1_theme"
+                        android:elevation="2dp"
+                        android:padding="10dp"
+                        android:layout_margin="7dp"
+                        android:layout_height="40dp"/>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+                <ImageView
+                        android:src="@drawable/dhl512x512"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"/>
+                <TextView
+                        android:text="Dumaguete Health Line"
+                        android:layout_margin="5dp"
+                        android:textSize="20sp"
+                        android:textAlignment="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+
+
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Mobile Number"
+                    android:tooltipText="Current mobile number logged in"
+                    android:id="@+id/textViewUser"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:padding="5dp"
+                    android:background="@drawable/minibox"
+                    android:layout_height="wrap_content"/>
+            <TextView
+                    android:text="Just Relax! and Book Online"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            <ImageView
+                    android:layout_width="match_parent"
+                    android:src="@drawable/fitness"
+                    android:layout_height="200dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:gravity="bottom"
+                android:layout_weight="1"
+                android:layout_height="0dp">
+
+
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="2"
+                    android:background="@drawable/menu_border_bgtheme"
+                    android:layout_height="match_parent">
+
+
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="3"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content">
+                    <LinearLayout
+                            android:layout_width="0dp"
+                            android:id="@+id/dash_searchclinic"
+                            android:layout_margin="10dp"
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:layout_height="140dp">
+
+                        <ImageView
+                                android:layout_width="80dp"
+                                android:padding="20dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/menu1"
+                                android:elevation="3dp"
+                                android:layout_margin="5dp"
+                                android:background="@drawable/menu_1_theme"
+                                android:layout_height="80dp"/>
+
+
+
+                        <TextView
+                                android:layout_width="match_parent"
+                                android:textAlignment="center"
+                                android:text="@string/set_an_appointment"
+                                android:lines="2"
+                                android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="0dp"
+                            android:id="@+id/dash_appointments"
+                            android:layout_margin="10dp"
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:layout_height="140dp">
+
+                        <ImageView
+                                android:layout_width="80dp"
+                                android:padding="20dp"
+                                android:background="@drawable/menu_2_theme"
+                                android:layout_gravity="center"
+                                android:src="@drawable/menu2"
+                                android:elevation="3dp"
+                                android:layout_margin="5dp"
+                                android:layout_height="80dp"/>
+
+
+                        <TextView
+                                android:layout_width="match_parent"
+                                android:textAlignment="center"
+                                android:text="@string/appointments"
+                                android:lines="2"
+                                android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="0dp"
+                            android:id="@+id/dash_bmicalculator"
+                            android:layout_margin="10dp"
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:layout_height="140dp">
+
+                        <ImageView
+                                android:layout_width="80dp"
+                                android:padding="20dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/menu3"
+                                android:background="@drawable/menu_3_theme"
+                                android:elevation="3dp"
+                                android:layout_margin="5dp"
+                                android:layout_height="80dp"/>
+
+
+
+                        <TextView
+                                android:layout_width="match_parent"
+                                android:textAlignment="center"
+                                android:text="@string/bmi_calculator"
+                                android:lines="2"
+                                android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="3"
+                        android:layout_weight="1"
+                        android:soundEffectsEnabled="true"
+                        android:layout_height="wrap_content">
+
+                    <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_margin="10dp"
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:id="@+id/dash_map"
+                            android:elevation="5dp"
+                            android:gravity="center"
+                            android:layout_height="140dp">
+
+                        <ImageView
+                                android:layout_width="80dp"
+                                android:padding="20dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/menu4"
+                                android:background="@drawable/menu_4_theme"
+                                android:elevation="3dp"
+                                android:layout_margin="5dp"
+                                android:layout_height="80dp"/>
+
+
+                        <TextView
+                                android:layout_width="match_parent"
+                                android:textAlignment="center"
+                                android:text="@string/map"
+                                android:lines="2"
+                                android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="0dp"
+                            android:id="@+id/dash_tips"
+                            android:layout_margin="10dp"
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:layout_height="140dp">
+
+                        <ImageView
+                                android:layout_width="80dp"
+                                android:padding="10dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/menu_5_theme"
+                                android:elevation="3dp"
+                                android:layout_margin="5dp"
+                                android:src="@drawable/menu5"
+                                android:layout_height="80dp"/>
+
+
+
+                        <TextView
+                                android:layout_width="match_parent"
+                                android:textAlignment="center"
+                                android:text="@string/fitness_tips"
+                                android:lines="2"
+                                android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="0dp"
+                            android:id="@+id/dash_message"
+                            android:layout_margin="10dp"
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:elevation="5dp"
+                            android:gravity="center"
+                            android:layout_height="140dp">
+
+                        <ImageView
+                                android:layout_width="80dp"
+                                android:padding="20dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/menu6"
+                                android:background="@drawable/menu_6_theme"
+                                android:elevation="3dp"
+                                android:layout_margin="5dp"
+                                android:layout_height="80dp"/>
+
+
+
+                        <TextView
+                                android:layout_width="match_parent"
+                                android:padding="8dp"
+                                android:textAlignment="center"
+                                android:text="@string/messenger"
+                                android:lines="2"
+                                android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

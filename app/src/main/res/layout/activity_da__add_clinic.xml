@@ -1,0 +1,925 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_gradient_theme"
+        android:layout_height="match_parent"
+        tools:context=".DA_AddClinic">
+
+    <LinearLayout
+            android:paddingBottom="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content">
+
+            <ImageView
+                    android:layout_width="match_parent"
+                    android:src="@drawable/doctors_avatars"
+                    android:layout_margin="30dp"
+                    android:layout_height="90dp"/>
+
+            <TextView
+                    android:text="@string/name"
+                    android:textSize="15sp"
+                    android:layout_margin="2dp"
+                    android:padding="5dp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:id="@+id/addClinic_editText_FirstName"
+                    android:background="@drawable/bg_edittext"
+                    android:hint="@string/first_name"
+                    android:layout_marginTop="5dp"
+                    android:layout_height="wrap_content"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:id="@+id/addClinic_editText_MiddleName"
+                    android:background="@drawable/bg_edittext"
+                    android:hint="@string/middle_name"
+                    android:layout_marginTop="5dp"
+                    android:layout_height="wrap_content"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:id="@+id/addClinic_editText_LastName"
+                    android:background="@drawable/bg_edittext"
+                    android:hint="@string/last_name"
+                    android:layout_marginTop="5dp"
+                    android:layout_height="wrap_content"/>
+
+            <TextView
+                    android:text="@string/gender"
+                    android:textSize="15sp"
+                    android:padding="5dp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            <Spinner
+                    android:layout_width="match_parent"
+                    android:entries="@array/gender"
+                    android:textSize="20sp"
+                    android:id="@+id/addClinic_spinner_Gender"
+                    android:background="@drawable/bg_edittext"
+                    android:spinnerMode="dialog"
+                    android:paddingStart="20dp"
+                    android:layout_margin="5dp"
+                    android:layout_height="wrap_content"/>
+
+            <TextView
+                    android:text="@string/doctorate_degree"
+                    android:textSize="15sp"
+                    android:padding="5dp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+            <Spinner
+                    android:layout_width="match_parent"
+                    android:entries="@array/doctoralDegree"
+                    android:textSize="20sp"
+                    android:id="@+id/addClinic_spinner_degree"
+                    android:background="@drawable/bg_edittext"
+                    android:spinnerMode="dialog"
+                    android:paddingStart="20dp"
+                    android:layout_margin="5dp"
+                    android:layout_height="wrap_content">
+
+            </Spinner>
+
+            <TextView
+                    android:text="@string/medical_practice"
+                    android:textSize="15sp"
+                    android:layout_marginTop="10dp"
+                    android:padding="5dp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            <Spinner
+                    android:layout_width="match_parent"
+                    android:entries="@array/medicalPractice"
+                    android:textSize="20sp"
+                    android:id="@+id/addClinic_spinner_medPractice"
+                    android:background="@drawable/bg_edittext"
+                    android:spinnerMode="dialog"
+                    android:paddingStart="20dp"
+                    android:layout_margin="5dp"
+                    android:layout_height="wrap_content">
+
+            </Spinner>
+
+            <TextView
+                    android:text="Phone Number"
+                    android:textSize="15sp"
+                    android:layout_marginTop="10dp"
+                    android:padding="5dp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_margin="5dp"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:id="@+id/addClinic_editText_contactNum"
+                    android:inputType="phone"
+                    android:background="@drawable/bg_edittext"
+                    android:hint="Telephone Number"
+                    android:layout_height="wrap_content"/>
+
+            <TextView
+                    android:text="@string/certificates"
+                    android:textSize="15sp"
+                    android:layout_marginTop="10dp"
+                    android:padding="5dp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_margin="5dp"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:id="@+id/addClinic_editText_certificates"
+                    android:inputType="textMultiLine"
+                    android:background="@drawable/bg_edittext"
+                    android:hint="@string/certificates"
+                    android:layout_height="wrap_content"/>
+
+            <TextView
+                    android:text="@string/clinic_full_address"
+                    android:textSize="15sp"
+                    android:layout_marginTop="10dp"
+                    android:padding="5dp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_margin="5dp"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:inputType="textMultiLine"
+                    android:id="@+id/addClinic_editText_clinicAddress"
+                    android:background="@drawable/bg_edittext"
+                    android:hint="@string/address"
+                    android:layout_height="wrap_content"/>
+
+
+
+            <TextView
+                    android:text="@string/availability"
+                    android:textSize="15sp"
+                    android:padding="5dp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            <TextView
+                    android:text="(Tap to set day and time availability)"
+                    android:textSize="15sp"
+                    android:textStyle="italic"
+                    android:layout_marginBottom="10dp"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="30dp"
+                    android:layout_height="wrap_content">
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+
+                    <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="#70ffffff"/>
+
+                    <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:weightSum="3"
+                            android:gravity="center"
+                            android:layout_marginBottom="10dp"
+                            android:layout_height="wrap_content">
+
+                        <TextView
+                                android:text="DAYS"
+                                android:background="@drawable/bg_centered_textview"
+                                android:gravity="center"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"/>
+
+                        <TextView
+                                android:text="OPEN"
+                                android:background="@drawable/bg_centered_textview"
+                                android:gravity="center"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"/>
+
+                        <TextView
+                                android:text="CLOSE"
+                                android:background="@drawable/bg_centered_textview"
+                                android:gravity="center"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"/>
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:weightSum="3"
+                            android:gravity="center"
+                            android:layout_marginBottom="10dp"
+                            android:layout_height="wrap_content">
+
+                        <CheckBox
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:text="@string/monday"
+                                android:textAlignment="center"
+                                android:background="@drawable/minibox_borderless"
+                                android:id="@+id/addClinic_checkbox_Mon"
+                                android:checked="true"
+                                android:layout_height="40dp"/>
+
+                        <TextView
+                                android:id="@+id/monopentime"
+                                android:text="08:00"
+                                android:background="@drawable/minibox_borderless"
+                                android:layout_width="0dp"
+                                android:gravity="center"
+                                android:layout_weight="1"
+                                android:layout_height="40dp"/>
+
+                        <TextView
+                                android:text="17:00"
+                                android:background="@drawable/minibox_borderless"
+                                android:id="@+id/monclosetime"
+                                android:layout_width="0dp"
+                                android:gravity="center"
+                                android:layout_weight="1"
+                                android:layout_height="40dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:weightSum="3"
+                            android:gravity="center"
+                            android:layout_marginBottom="10dp"
+                            android:layout_height="wrap_content">
+
+                        <CheckBox
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:text="@string/tuesday"
+                                android:textAlignment="center"
+                                android:background="@drawable/minibox_borderless"
+                                android:id="@+id/addClinic_checkbox_Tue"
+                                android:checked="true"
+                                android:layout_height="40dp"/>
+
+                        <TextView
+                                android:id="@+id/tueopentime"
+                                android:text="08:00"
+                                android:background="@drawable/minibox_borderless"
+                                android:gravity="center"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="40dp"/>
+
+                        <TextView
+                                android:text="17:00"
+                                android:background="@drawable/minibox_borderless"
+                                android:gravity="center"
+                                android:id="@+id/tueclosetime"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="40dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:weightSum="3"
+                            android:gravity="center"
+                            android:layout_marginBottom="10dp"
+                            android:layout_height="wrap_content">
+
+                        <CheckBox
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:text="@string/wednesday"
+                                android:textAlignment="center"
+                                android:background="@drawable/minibox_borderless"
+                                android:id="@+id/addClinic_checkbox_Wed"
+                                android:checked="true"
+                                android:layout_height="40dp"/>
+
+                        <TextView
+                                android:id="@+id/wedopentime"
+                                android:text="08:00"
+                                android:background="@drawable/minibox_borderless"
+                                android:gravity="center"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="40dp"/>
+
+                        <TextView
+                                android:text="17:00"
+                                android:background="@drawable/minibox_borderless"
+                                android:gravity="center"
+                                android:id="@+id/wedclosetime"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="40dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:weightSum="3"
+                            android:gravity="center"
+                            android:layout_marginBottom="10dp"
+                            android:layout_height="wrap_content">
+
+                        <CheckBox
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:text="@string/thursday"
+                                android:textAlignment="center"
+                                android:background="@drawable/minibox_borderless"
+                                android:id="@+id/addClinic_checkbox_Thu"
+                                android:checked="true"
+                                android:layout_height="40dp"/>
+
+                        <TextView
+                                android:id="@+id/thuopentime"
+                                android:text="08:00"
+                                android:background="@drawable/minibox_borderless"
+                                android:gravity="center"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="40dp"/>
+
+                        <TextView
+                                android:text="17:00"
+                                android:background="@drawable/minibox_borderless"
+                                android:gravity="center"
+                                android:id="@+id/thuclosetime"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="40dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:weightSum="3"
+                            android:gravity="center"
+                            android:layout_marginBottom="10dp"
+                            android:layout_height="wrap_content">
+
+                        <CheckBox
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:text="@string/friday"
+                                android:textAlignment="center"
+                                android:background="@drawable/minibox_borderless"
+                                android:id="@+id/addClinic_checkbox_Fri"
+                                android:checked="true"
+                                android:layout_height="40dp"/>
+
+                        <TextView
+                                android:id="@+id/friopentime"
+                                android:text="08:00"
+                                android:background="@drawable/minibox_borderless"
+                                android:gravity="center"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="40dp"/>
+
+                        <TextView
+                                android:text="17:00"
+                                android:background="@drawable/minibox_borderless"
+                                android:gravity="center"
+                                android:id="@+id/friclosetime"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="40dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:weightSum="3"
+                            android:gravity="center"
+                            android:layout_marginBottom="10dp"
+                            android:layout_height="wrap_content">
+
+                        <CheckBox
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:text="@string/saturday"
+                                android:textAlignment="center"
+                                android:background="@drawable/minibox_borderless"
+                                android:id="@+id/addClinic_checkbox_Sat"
+                                android:checked="false"
+                                android:layout_height="40dp"/>
+
+                        <TextView
+                                android:id="@+id/satopentime"
+                                android:text="08:00"
+                                android:background="@drawable/minibox_borderless"
+                                android:gravity="center"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:visibility="invisible"
+                                android:layout_height="40dp"/>
+
+                        <TextView
+                                android:text="17:00"
+                                android:background="@drawable/minibox_borderless"
+                                android:gravity="center"
+                                android:id="@+id/satclosetime"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:visibility="invisible"
+                                android:layout_height="40dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:weightSum="3"
+                            android:gravity="center"
+                            android:layout_marginBottom="10dp"
+                            android:layout_height="wrap_content">
+
+                        <CheckBox
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:text="@string/sunday"
+                                android:textAlignment="center"
+                                android:background="@drawable/minibox_borderless"
+                                android:id="@+id/addClinic_checkbox_Sun"
+                                android:layout_height="40dp"/>
+
+                        <TextView
+                                android:id="@+id/sunopentime"
+                                android:text="08:00"
+                                android:background="@drawable/minibox_borderless"
+                                android:gravity="center"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:visibility="invisible"
+                                android:layout_height="40dp"/>
+
+                        <TextView
+                                android:text="17:00"
+                                android:background="@drawable/minibox_borderless"
+                                android:gravity="center"
+                                android:id="@+id/sunclosetime"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:visibility="invisible"
+                                android:layout_height="40dp"/>
+                    </LinearLayout>
+
+                    <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginBottom="30dp"
+                            android:background="#70ffffff"/>
+
+                    <TextView
+                            android:text="Set clinic breaks if applicable"
+                            android:textSize="15sp"
+                            android:textStyle="italic"
+                            android:layout_marginBottom="10dp"
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="#70ffffff"/>
+
+                    <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:weightSum="3"
+                            android:gravity="center"
+                            android:layout_marginBottom="10dp"
+                            android:layout_height="wrap_content">
+
+                        <TextView
+                                android:gravity="center"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"/>
+
+                        <TextView
+                                android:text="START"
+                                android:background="@drawable/bg_centered_textview"
+                                android:gravity="center"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"/>
+
+                        <TextView
+                                android:text="END"
+                                android:background="@drawable/bg_centered_textview"
+                                android:gravity="center"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:weightSum="3"
+                            android:gravity="center"
+                            android:layout_marginBottom="10dp"
+                            android:layout_height="wrap_content">
+
+                        <CheckBox
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:text="1st Break"
+                                android:textAlignment="center"
+                                android:background="@drawable/minibox_borderless"
+                                android:id="@+id/addClinic_brk1"
+                                android:layout_height="40dp"/>
+
+                        <TextView
+                                android:id="@+id/brkstart1"
+                                android:text="12:00"
+                                android:background="@drawable/minibox_borderless"
+                                android:gravity="center"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:visibility="invisible"
+                                android:layout_height="40dp"/>
+
+                        <TextView
+                                android:text="13:00"
+                                android:background="@drawable/minibox_borderless"
+                                android:gravity="center"
+                                android:id="@+id/brkend1"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:visibility="invisible"
+                                android:layout_height="40dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:weightSum="3"
+                            android:gravity="center"
+                            android:layout_marginBottom="10dp"
+                            android:layout_height="wrap_content">
+
+                        <CheckBox
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:text="2nd Break"
+                                android:textAlignment="center"
+                                android:background="@drawable/minibox_borderless"
+                                android:id="@+id/addClinic_brk2"
+                                android:layout_height="40dp"/>
+
+                        <TextView
+                                android:id="@+id/brkstart2"
+                                android:text="19:00"
+                                android:background="@drawable/minibox_borderless"
+                                android:gravity="center"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:visibility="invisible"
+                                android:layout_height="40dp"/>
+
+                        <TextView
+                                android:text="20:00"
+                                android:background="@drawable/minibox_borderless"
+                                android:gravity="center"
+                                android:id="@+id/brkend2"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:visibility="invisible"
+                                android:layout_height="40dp"/>
+                    </LinearLayout>
+
+
+
+                    <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#70ffffff"/>
+
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                    android:text="Maximum number of Patients per hour"
+                    android:textSize="15sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:padding="5dp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="40dp"
+                    android:layout_height="wrap_content">
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:paddingBottom="20dp"
+                            android:layout_height="wrap_content">
+
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:gravity="center"
+                                android:layout_height="wrap_content">
+                            <ImageView
+                                    android:layout_width="30dp"
+                                    android:src="@drawable/negative_icon"
+                                    android:layout_margin="5dp"
+                                    android:elevation="3dp"
+                                    android:id="@+id/patient_minus"
+                                    android:layout_height="35dp"/>
+
+
+                            <TextView
+                                    android:text="1"
+                                    android:id="@+id/maximum_patients"
+                                    android:textSize="20dp"
+                                    android:gravity="center"
+                                    android:layout_marginLeft="30dp"
+                                    android:layout_marginRight="30dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"/>
+
+                            <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_margin="5dp"
+                                    android:elevation="3dp"
+                                    android:src="@drawable/positive_icon"
+                                    android:id="@+id/patient_plus"
+                                    android:layout_height="35dp"/>
+
+
+                        </LinearLayout>
+
+                        <TextView
+                                android:text="Patient"
+                                android:id="@+id/textview_patienttitle"
+                                android:textSize="15dp"
+                                android:gravity="center"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:gravity="center"
+                            android:layout_height="match_parent">
+
+
+                        <SeekBar
+                                android:layout_width="match_parent"
+                                android:id="@+id/seekbar_patients"
+                                android:min="1"
+                                android:max="100"
+                                android:secondaryProgress="50"
+                                android:layout_height="wrap_content"/>
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <TextView
+                    android:text="Days in Advance patients can book for appointment"
+                    android:textSize="15sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:padding="5dp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="40dp"
+                    android:layout_height="wrap_content">
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:paddingBottom="20dp"
+                            android:layout_height="wrap_content">
+
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:gravity="center"
+                                android:layout_height="wrap_content">
+                            <ImageView
+                                    android:layout_width="30dp"
+                                    android:src="@drawable/negative_icon"
+                                    android:layout_margin="5dp"
+                                    android:elevation="3dp"
+                                    android:id="@+id/days_minus"
+                                    android:layout_height="35dp"/>
+
+
+                            <TextView
+                                    android:text="7"
+                                    android:id="@+id/book_days"
+                                    android:textSize="20dp"
+                                    android:gravity="center"
+                                    android:layout_marginLeft="30dp"
+                                    android:layout_marginRight="30dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"/>
+
+                            <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_margin="5dp"
+                                    android:elevation="3dp"
+                                    android:src="@drawable/positive_icon"
+                                    android:id="@+id/days_plus"
+                                    android:layout_height="35dp"/>
+
+
+                        </LinearLayout>
+
+                        <TextView
+                                android:text="Days ahead"
+                                android:id="@+id/textview_bookdaystitle"
+                                android:textSize="15dp"
+                                android:gravity="center"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:gravity="center"
+                            android:layout_height="match_parent">
+
+
+                        <SeekBar
+                                android:layout_width="match_parent"
+                                android:id="@+id/seekbar_bookdays"
+                                android:min="7"
+                                android:max="365"
+                                android:secondaryProgress="50"
+                                android:layout_height="wrap_content"/>
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_height="wrap_content">
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:weightSum="2"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:gravity="left"
+                        android:layout_height="wrap_content">
+                    <Button
+                            android:layout_width="match_parent"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:text="Close"
+                            android:id="@+id/addClinic_button_Close"
+                            android:background="@drawable/bg_button_leftattached"
+                            android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+                <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:gravity="right"
+                        android:layout_height="wrap_content">
+                    <Button
+                            android:layout_width="match_parent"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:text="@string/save_clinic"
+                            android:id="@+id/addClinic_button_SaveClinic"
+                            android:layout_gravity="center"
+                            android:background="@drawable/bg_button_rightattached"
+                            android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+            <ProgressBar
+                    style="?android:attr/progressBarStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible"
+                    android:id="@+id/progressbar"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</ScrollView>
